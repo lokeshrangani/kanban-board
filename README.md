@@ -19,6 +19,7 @@ npm run dev
 cd kanban-board/kanban-app
 php artisan key:generate
 composer install
+php artisan passport:install
 php artisan serve
 
 NOTE: Please update DB configuration in .env (SQL FIle : kanban-board/kanban-app/storage/kanban.sql)
