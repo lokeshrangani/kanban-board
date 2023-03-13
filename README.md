@@ -17,6 +17,7 @@ npm install
 npm run dev
 
 cd kanban-board/kanban-app
+php artisan key:generate
 composer install
 php artisan serve
 
@@ -54,7 +55,7 @@ GET /api/task
 ```
 
 ```http
-GET /api/task/create
+POST /api/task/create
 ```
 
 | Parameter | Type | Description |
@@ -64,7 +65,7 @@ GET /api/task/create
 | `status` | `string` | **Required**. Task Status["todo","inprogress","done"] |
 
 ```http
-GET /api/task/update
+POST /api/task/update
 ```
 
 | Parameter | Type | Description |
